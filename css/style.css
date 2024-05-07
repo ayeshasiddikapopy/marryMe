@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+li {
+    list-style: none;
+}
+img {
+    vertical-align: middle;
+}
+:root{
+    --pink: #C73659;
+    --black: #151515;
+    --primary: #A91D3A;
+    --secondary: #EEEEEE;
+    --white : #fff;
+    --lowerParagraphFont: clamp(0.75rem, 1vw, 0.875rem);
+    --paragraphFont: clamp(0.875rem, 1vw, 1rem);
+    --paraFont: clamp(1rem, 1vw, 1.125rem);
+    --paraheadingFont: clamp(1.125rem, 1vw, 1.25rem);
+    --subheadingFont: clamp(2rem, 1vw, 2.5rem);
+    --headingFont: clamp(3.125rem, 1vw, 3.5rem);
+    --light:200;
+    --normal: 400;
+    --medium: 500;
+    --semibold:600;
+    --bold:700;
+    --container: clamp(90rem, 1vw, 125rem);
+    --primaryFamily:  "Cormorant Garamond", serif;
+    --secondaryFamily:  "Open Sans", sans-serif;
+    --cursive:"Dancing Script", cursive;
+
+}
