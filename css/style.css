@@ -43,7 +43,8 @@ img {
 }
 /* ------------------------navigation starts------------------ */
 #navigation{
-    padding: 0 0.6rem ;
+    background: var(--primary);
+
 }
 .nav_logo {
     text-align: center;
@@ -55,13 +56,46 @@ img {
     letter-spacing: 1.6rem;
 }
 .nav_contents{
-    background: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.nav_icon {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+.nav_icon::after{
+    position: absolute;
+    content: '';
+    width: 40%;
+    height: 1px;
+    background: #ffffff97;
+    top: 50%;
+}
+.nav_item{
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
+.nav_icon{
+    width: 20%;
+}
+.nav_icon i{
+    color: #EEEEEE;
+    font-size: var(--lowerParagraphFont);
+    border: 1px solid #fff;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 1px;
+}
 .nav_inner_items{
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
+    width: 50%;
+    justify-content: end;
 }
 .bar{
     display: none;
@@ -69,24 +103,54 @@ img {
 .nav_inner{
     color: var(--white);
     font-size: var(--paraFont);
+    font-weight: var(--normal);
+    font-family: var(--primaryFamily);
+    text-transform: capitalize;
+    position: relative;
+    padding: 0.2rem 0;
+    overflow: hidden;
+}
+.nav_inner::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: -100%;
+    transition: 1s;
+} 
+.nav_inner::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    bottom: 0;
+    left: -120%;
+    transition: 1s;
+} 
+.nav_inner:hover.nav_inner::after {
+    left: 200%;
+}
+.nav_inner:hover.nav_inner::before{
+    left: 0%;
+}
 
-}
-.nav_item{
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-}
-.nav_icon{
-    width: 20%;
-}
 .nav_user {
+    width: 50%;
     color: var(--white);
-    align-self: flex-end;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
 }
 .login{
     color: var(--white);
+    font-size: var(--paraFont);
+    font-weight: var(--normal);
+    font-family: var(--primaryFamily);
+    text-transform: capitalize;
 }
-
 /* ------------------------navigation ends-------------------- */
 /* ------------------------  starts-------------------- */
 /* ------------------------  ends-------------------- */

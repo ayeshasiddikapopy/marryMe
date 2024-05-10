@@ -1,4 +1,7 @@
 @media (min-width:100px) and (max-width: 600px) {
+    #navigation{
+        padding: 0 0.6rem ;
+    }
     .nav_logo {
         font-size: var(--subheadingFont);
         padding: 1rem 0;
@@ -12,22 +15,48 @@
     .nav_inner_items{
         display: block;
     }
+    .nav_icon{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav_icon::after{
+        width: 100%;
+       
+    }
+    .nav_icon i{
+        font-size: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
     .bar{
         display: inline;
-        position: absolute;
-        right: 0;
-        top: 30%;
     }
     .nav_item{
         /* display: none; */
         position: absolute;
         transform: translateX(-200%);
         transition: 1s;
+        background: var(--primary);
+        display: block;     
+        z-index: 9999999999;
+        border: 1px solid #fff;
     }
     .nav_item_active{
-        transform: translateX(0);
+        transform: translateX(-5%);
         transition: 1s;
-
+    }
+    .nav_inner {
+        padding: 2rem ;
+    }
+    .nav_user{
+        margin: 2rem;
+        flex-direction: column;
+    }
+    .bar{
+        color: var(--white);
     }
 }
 @media (min-width:601px) and (max-width: 850px) {
