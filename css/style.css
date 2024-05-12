@@ -71,7 +71,8 @@ img {
     width: 40%;
     height: 1px;
     background: #ffffff97;
-    top: 50%;
+    top: 40%;
+    transform: translateY(-50%);
 }
 .nav_item{
     width: 80%;
@@ -90,6 +91,13 @@ img {
     line-height: 20px;
     text-align: center;
     border-radius: 1px;
+    margin: 0 0.5rem;
+    transition: 0.3s;
+}
+.nav_icon i:hover{
+    background: var(--secondary);
+    color: #151515;
+
 }
 .nav_inner_items{
     display: flex;
@@ -109,6 +117,7 @@ img {
     position: relative;
     padding: 0.2rem 0;
     overflow: hidden;
+    transition: 0.2s;
 }
 .nav_inner::after{
     position: absolute;
@@ -130,13 +139,15 @@ img {
     left: -120%;
     transition: 1s;
 } 
+.nav_inner:hover{
+    font-weight: var(--bold);
+}
 .nav_inner:hover.nav_inner::after {
     left: 200%;
 }
 .nav_inner:hover.nav_inner::before{
     left: 0%;
 }
-
 .nav_user {
     width: 50%;
     color: var(--white);
@@ -150,7 +161,29 @@ img {
     font-weight: var(--normal);
     font-family: var(--primaryFamily);
     text-transform: capitalize;
+    transition: 0.2s;
 }
+.login:hover{
+    font-weight: var(--bold);
+}
+.nav_user i{ 
+    color: #EEEEEE;
+    font-size: var(--lowerParagraphFont);
+    border: 1px solid #fff;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 1px;
+    margin: 0 0.5rem;
+    transition: 0.3s;
+}
+.nav_user i:hover{
+    background: var(--secondary);
+    color: #151515;
+
+}
+
 /* ------------------------navigation ends-------------------- */
 /* ------------------------  starts-------------------- */
 /* ------------------------  ends-------------------- */
